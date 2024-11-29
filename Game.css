@@ -1,0 +1,101 @@
+/* Basic reset for margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Container for words */
+#wordsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Individual word styles */
+.word {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: grab;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.word.draggableFormat {
+    opacity: 0.5;
+}
+
+.word:hover {
+    background-color: #0056b3;
+}
+
+/* Container for sentence slots */
+#sentenceContainer {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Individual sentence slot styles */
+.sentence-slot {
+    width: 100px;
+    height: 50px;
+    border: 2px dashed #007bff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+.sentence-slot:hover {
+    background-color: #e7f0ff;
+}
+
+/* Display for remarks and scores */
+#remarks {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+#scores {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Button styles */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
